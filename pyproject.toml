@@ -1,0 +1,39 @@
+[project]
+name = "contentresolver"
+version = "1.0.0"
+authors  = [
+    { name = "Adam Samalik", email = "asamalik@redhat.com" },
+    { name = "Stephen Gallagher", email = "sgallagh@redhat.com" },
+]
+
+description = "A tool to resolve dependencies for Linux operating systems"
+
+readme = "README.md"
+
+requires-python = ">=3.9"
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: POSIX :: Linux",
+    "Topic :: System :: Software Distribution",
+]
+
+
+[project.urls]
+"Homepage" = "https://tiny.distro.builders"
+"Bug Tracker" = "https://github.com/minimization/content-resolver/issues"
+
+
+[project.scripts]
+contentresolver = "contentresolver:main"
+
+
+[build-system]
+requires = ["setuptools >= 40.6.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = [
+    "contentresolver",
+]

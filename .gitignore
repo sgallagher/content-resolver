@@ -1,4 +1,4 @@
-config
+/config
 configs
 out
 *.swp
@@ -15,3 +15,4 @@ actual_output
 actual_configs
 content-resolver-input
 debug_*.json
+*.py[co]
